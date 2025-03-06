@@ -28,17 +28,15 @@
                e.printStackTrace();
            }
            studentRecords = new ArrayList<>();
-           mainFrame();
-           createUI();
-       }
-
-       public void mainFrame() {
            frame = new JFrame();
            frame.setTitle("STUDENT MS");
            frame.setSize(450, 600);
            frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
            frame.setLocationRelativeTo(null);
+
+           createUI();
        }
+
 
         void createUI() {
            cardLayout = new CardLayout();
