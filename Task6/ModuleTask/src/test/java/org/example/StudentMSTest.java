@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
       @Test
       void MainFrame() {
           StudentMS studentMS = new StudentMS();
+          studentMS.mainFrame();
           JFrame frame = studentMS.frame;
           assertAll("Main Frame",
                   () -> assertNotNull(frame),
